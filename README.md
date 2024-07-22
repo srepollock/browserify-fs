@@ -2,7 +2,7 @@
 
 [fs](http://nodejs.org/api/fs.html) for the browser using [level-filesystem](https://github.com/mafintosh/level-filesystem), [level.js](https://github.com/maxogden/level.js) and [browserify](https://github.com/substack/node-browserify)
 
-	npm install browserify-fs
+	npm install srepollock-browserify-fs
 
 ![dat](http://img.shields.io/badge/Development%20sponsored%20by-dat-green.svg?style=flat)
 
@@ -11,7 +11,7 @@
 To use simply require it and use it as you would fs
 
 ``` js
-var fs = require('browserify-fs');
+var fs = require('srepollock-browserify-fs');
 
 fs.mkdir('/home', function() {
 	fs.writeFile('/home/hello-world.txt', 'Hello world!\n', function() {
@@ -22,9 +22,9 @@ fs.mkdir('/home', function() {
 });
 ```
 
-You can also make browserify replace `require('fs')` with browserify-fs using
+You can also make browserify replace `require('fs')` with srepollock-browserify-fs using
 
-	browserify -r fs:browserify-fs
+	browserify -r fs:srepollock-browserify-fs
 
 Using the replacement you can browserify modules like [tar-fs](https://github.com/mafintosh/tar-fs) and [mkdirp](https://github.com/substack/node-mkdirp)!
 
